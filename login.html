@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            line-height: 28px;
+            color: #6a6a6a;
+            font-size: 14px;
+            background-color: #eff2f1;
+        }
+        
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+        }
+        
+        .login-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 80%;
+            text-align: center;
+            position: relative;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: black;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        button {
+            border-radius: 10px;
+            border: 1px solid rgb(208, 208, 208);
+        }
+
+    </style>
+</head>
+<body>
+    <a href="index.html" id="open-login"></a>
+
+    <div class="overlay" id="overlay">
+        <div class="login-container">
+            <h2>Login</h2>
+            <!-- Add your login form here -->
+            <p>Username: <input type="text"></p>
+            <p>Password: <input type="password"></p>
+            <button>Login</button>
+            <a href="index.html"><span class="close-btn" id="close-login">&#10005;</span></a>
+        </div>
+    </div>
+
+    <a href="index.html"><span class="overlay" id="overlay"></span></a>
+    
+    <script>
+
+        var openBtn = document.getElementById('open-login');
+        var overlay = document.getElementById('overlay');
+        var closeBtn = document.getElementById('close-login');
+
+        openBtn.addEventListener('click', function() {
+            overlay.style.display = 'flex';
+        });
+
+        closeBtn.addEventListener('click', function() {
+            overlay.style.display = 'none';
+        });
+
+        overlay.addEventListener('click', function(event) {
+            if (event.target === overlay) {
+                overlay.style.display = 'none';
+            }
+        });
+    </script>
+
+<script>
+     // 关闭登录框函数
+     function closeLogin() {
+      // 返回index.html界面的代码，根据实际情况修改
+      window.location.href = 'index.html';
+    }
+
+  // Get the modal element
+  var modal = document.getElementById("login-modal");
+  
+  // Get the user icon element
+  var userIcon = document.getElementById("user-icon");
+
+  // Get the close button element
+  var closeButton = document.getElementsByClassName("close")[0];
+
+  // When the user clicks the user icon, open the modal
+  userIcon.onclick = function() {
+    modal.style.display = "block";
+  };
+
+  // When the user clicks on the close button or outside the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal || event.target == closeButton) {
+      modal.style.display = "none";
+    }
+  };
+  </script>
+
+</body>
+</html>
