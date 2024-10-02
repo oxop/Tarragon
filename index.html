@@ -1,634 +1,246 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="favicon.png">
-
-  <meta name="description" content="" />
-  <meta name="keywords" content="bootstrap, bootstrap4" />
-
-		<!-- Bootstrap CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-		<link href="css/tiny-slider.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-
-		<style>
-		.feature .icon img,
-		.img-wrap img {
-  		transition: opacity 0.3s, transform 0.3s;
-		}
-
-		.feature .icon:hover img,
-		.img-wrap:hover img {
-		opacity: 0.8;
-		transform: scale(1.1);
-		}
-
-
-
-			.imgs-grid .grid img {
-  		transition: opacity 0.3s, transform 0.3s;
-			}
-
-			.imgs-grid .grid:hover img {
-			opacity: 0.8;
-			transform: scale(1.1);
-			}
-
-			/* HTML2的样式 */
-			#frameContainer {
-			width: 1800; /* 设置初始宽度 */
-			height: 795px; /* 设置初始高度 */
-			resize: both; /* 允许调整大小 */
-			}
-			/* 按钮样式 */
-			.button-container {
-			position: relative;
-			margin-top: 0px; /* 调整按钮距离顶部的距离 */
-			margin-left: 30px; /* 调整按钮距离左侧的距离 */
-			}
-			/*按钮样式*/
-			.btn-black {
-			padding: 2px 4px;
-			background-color: transparent;
-			color: #000000;
-			border: 2px solid black;
-			border-color: #000000;
-			cursor: pointer;
-			border-radius: 30px;
-			font-family: 'Clash Display Medium', sans-serif;
-			font-size: 6;
-			}
-
-			.btn-black:active,
-			.btn-black:hover {
-			background-color: rgb(255, 255, 255);
-			border-color: transparent;
-			}
-			/*Read More 样式*/
-			.overlay {
-			position: fixed;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			width: 90%;
-			max-width: 600px;
-			height: 90%;
-			max-height: 600px;
-			background-color: white;
-			border: 1px solid #dcdcdc;
-			border-radius: 25px; /* 添加圆角矩形样式 */
-			box-shadow: 0 2px 4px rgba(227, 227, 227, 0.2);
-			padding: 20px;
-			display: none;
-			z-index: 9999;
-		}
-
-		/* 关闭按钮样式 */
-		.close-button {
-			position: absolute;
-			top: 10px;
-			right: 10px;
-			cursor: pointer;
-			font-size: 24px;
-		}
-
-		  </style>
-
-		<title>Tarragon</title>
-	</head>
-
-	<body>
-
-		<!-- Start Header/Navigation -->
-		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Tarragon navigation bar">
-			<div class="container">
-				<a class="navbar-brand" href="index.html">Tarragon<span>.</span></a>
-		
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsTarragon" aria-controls="navbarsTarragon" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-		
-				<div class="collapse navbar-collapse" id="navbarsTarragon">
-					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-						<li class="nav-item active">
-							<a class="nav-link" href="index.html">Home</a>
-						</li>
-						<li><a class="nav-link" href="shop.html">Shop</a></li>
-					</ul>
-		
-					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-						<li><a class="nav-link" href="login.html"><img src="images/user.svg"></a></li>
-						<li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
-						<li><div class=""><button class="btn-black" id="toggle-button">🌞🌔</button></div></li>
-					
-						
-						 <script>
-							// 获取按钮和 body 元素
-							var button = document.getElementById('toggle-button');
-							var body = document.body;
-
-							// 定义变量来跟踪背景颜色的状态
-							var isGray = false;
-
-							// 添加按钮点击事件的监听器
-							button.addEventListener('click', function() {
-							// 切换背景颜色
-							if (isGray) {
-								body.style.backgroundColor = '#eff2f1';
-								isGray = false;
-							} else {
-								body.style.backgroundColor = 'gray';
-								isGray = true;
-							}
-							});
-
-						</script>
-
-					</ul>
-				</div>
-			</div>
-		</nav>
- 		
-		<!-- End Header/Navigation -->
-
-		<!-- Start Hero Section -->
-			
-				
-		<div id="frameContainer">
-			<iframe src="动画 - 嵌入3D.html" frameborder="0" width="100%" height="100%"></iframe>
-		</div>
-			
-		<!-- End Hero Section -->
-
-		<!-- Start Product Section -->
-		<div class="product-section">
-			<div class="container">
-				<div class="row">
-
-					<!-- Start Column 1 -->
-					<div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
-						<h2 class="mb-4 section-title">Crafted with Exceptional Ingredients.</h2>
-						<p class="mb-4">Experience a refreshing burst of bubbles with our irresistible soda fruit blend.</p>
-						<p><a href="shop.html" class="btn">Explore</a></p>
-					</div> 
-					<!-- End Column 1 -->
-
-					<!-- Start Column 2 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-						<a class="product-item" href="cart.html">
-							<img src="images/product-1.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Orange</h3>
-							<strong class="product-price">€1</strong>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div> 
-					<!-- End Column 2 -->
-
-					<!-- Start Column 3 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-						<a class="product-item" href="cart.html">
-							<img src="images/product-2.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Pineapple</h3>
-							<strong class="product-price">€1</strong>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div>
-					<!-- End Column 3 -->
-
-					<!-- Start Column 4 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-						<a class="product-item" href="cart.html">
-							<img src="images/product-3.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Grape</h3>
-							<strong class="product-price">€1</strong>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div>
-					<!-- End Column 4 -->
-
-				</div>
-			</div>
-		</div>
-		<!-- End Product Section -->
-
-		<!-- Start Why Choose Us Section -->
-		<div class="why-choose-section">
-			<div class="container">
-			  <div class="row justify-content-between">
-				<div class="col-lg-6">
-				  <h2 class="section-title">Why Choose Us</h2>
-				  <p>Experience the refreshing taste and natural goodness of our juice today!</p>
-		  
-				  <div class="row my-5">
-					<div class="col-6 col-md-6">
-					  <div class="feature">
-						<div class="icon">
-						  <img src="images/truck.svg" alt="Image" class="img-fluid hover-effect">
-						</div>
-						<h3>Fast &amp; Free Shipping</h3>
-						<p>Experience the convenience of fast and free shipping when you choose our juice.</p>
-					  </div>
-					</div>
-		  
-					<div class="col-6 col-md-6">
-					  <div class="feature">
-						<div class="icon">
-						  <img src="images/bag.svg" alt="Image" class="img-fluid hover-effect">
-						</div>
-						<h3>Easy to Shop</h3>
-						<p>Shop with ease through our user-friendly website or app.</p>
-					  </div>
-					</div>
-		  
-					<div class="col-6 col-md-6">
-					  <div class="feature">
-						<div class="icon">
-						  <img src="images/support.svg" alt="Image" class="img-fluid hover-effect">
-						</div>
-						<h3>24/7 Support</h3>
-						<p>Our dedicated support team is available around the clock to assist you.</p>
-					  </div>
-					</div>
-		  
-					<div class="col-6 col-md-6">
-					  <div class="feature">
-						<div class="icon">
-						  <img src="images/return.svg" alt="Image" class="img-fluid hover-effect">
-						</div>
-						<h3>Quality Assurance</h3>
-						<p>Trust in our commitment to delivering a high-quality product every time.</p>
-					  </div>
-					</div>
-				  </div>
-				</div>
-		  
-				<div class="col-lg-5">
-				  <div class="img-wrap">
-					<img src="images/why-choose-us-img.jpg" alt="Image" class="img-fluid">
-				  </div>
-				</div>
-		  
-			  </div>
-			</div>
-		  </div>
-		  
-		<!-- End Why Choose Us Section -->
-
-		<!-- Start We Help Section -->
-		<div class="we-help-section">
-			<div class="container">
-			  <div class="row justify-content-between">
-				<div class="col-lg-7 mb-5 mb-lg-0">
-				  <div class="imgs-grid">
-					<div class="grid grid-1">
-					  <img src="images/img-grid-1.jpg" alt="Untree.co">
-					</div>
-					<div class="grid grid-2">
-					  <img src="images/img-grid-2.jpg" alt="Untree.co">
-					</div>
-					<div class="grid grid-3">
-					  <img src="images/img-grid-3.jpg" alt="Untree.co">
-					</div>
-				  </div>
-				</div>
-				<div class="col-lg-5 ps-lg-5">
-				  <h2 class="section-title mb-4">Discover the Effervescent Delights of Sparkling Juice Infusions!</h2>
-				  <p>Indulge in a symphony of refreshing flavors with our handcrafted collection of sparkling juice infusions. These fizzy concoctions are meticulously blended to tantalize your taste buds and invigorate your senses. Immerse yourself in a world of vibrant citrusy bursts, luscious berry fizzes, tropical hints, and zesty lemonade sparkles.</p>
-		  
-				  <ul class="list-unstyled custom-list my-4">
-					<li>Sparkling Citrus Bliss</li>
-					<li>Berry Fizz Delight</li>
-					<li>Tropical Breeze Burst</li>
-					<li>Grape Fizz Fusion</li>
-				  </ul>
-				  <p><a href="shop.html" class="btn">Explore</a></p>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		  
-		<!-- End We Help Section -->
-
-		<!-- Start Popular Product -->
-		<div class="popular-product">
-			<div class="container">
-				<div class="row">
-		
-					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-						<div class="product-item-sm d-flex">
-							<div class="thumbnail">
-								<img src="images/product-1.png" alt="Image" class="img-fluid">
-							</div>
-							<div class="pt-3">
-								<h3>Sparkling Citrus Bliss</h3>
-								<p>Let's dive into the simple steps to create this fizzy and flavorful concoction!</p>
-								<p><a onclick="showArticle(1)">Read More</a></p>
-							</div>
-						</div>
-					</div>
-		
-					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-						<div class="product-item-sm d-flex">
-							<div class="thumbnail">
-								<img src="images/product-2.png" alt="Image" class="img-fluid">
-							</div>
-							<div class="pt-3">
-								<h3>Tropical Breeze Burst</h3>
-								<p>Get ready to be transported to a tropical oasis with this refreshing beverage.</p>
-								<p><a onclick="showArticle(2)">Read More</a></p>
-							</div>
-						</div>
-					</div>
-		
-					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-						<div class="product-item-sm d-flex">
-							<div class="thumbnail">
-								<img src="images/product-3.png" alt="Image" class="img-fluid">
-							</div>
-							<div class="pt-3">
-								<h3>Grape Fizz Fusion</h3>
-								<p>Elevate your thirst-quenching experience with our grape soda infusion.</p>
-								<p><a onclick="showArticle(3)">Read More</a></p>
-							</div>
-						</div>
-					</div>
-		
-				</div>
-			</div>
-		</div>
-		
-		<div id="article-overlay" class="overlay">
-			<div class="close-button" onclick="hideArticle()">&times;</div>
-			<h2>How to Make Sparkling Citrus Bliss</h2>
-			<p>
-				Ingredients:
-				<ul>
-					<li>1 can of orange soda</li>
-					<li>Juice from 1 lemon</li>
-					<li>Ice cubes</li>
-					<li>Optional: Orange slices for garnish</li>
-				</ul>
-				Instructions:
-				<ol>
-					<li>Chill the can of orange soda in the refrigerator.</li>
-					<li>Open the chilled soda can and pour it into a pitcher.</li>
-					<li>Squeeze the juice from 1 lemon into the pitcher.</li>
-					<li>Stir gently to combine the soda and lemon juice.</li>
-					<li>Add ice cubes to keep it cool and create a sparkling effect.</li>
-					<li>Optionally, garnish with orange slices.</li>
-					<li>Serve immediately and enjoy!</li>
-				</ol>
-				That's it! In just a few simple steps, you can make Sparkling Citrus Bliss using orange soda.
-			</p>
-		</div>
-		
-		<div id="article-overlay-2" class="overlay">
-			<div class="close-button" onclick="hideArticle()">&times;</div>
-			<h2>How to Make Tropical Breeze Burst</h2>
-			<p>
-				Ingredients:
-				<ul>
-					<li>1 can of pineapple soda</li>
-					<li>Juice from 1 lime</li>
-					<li>Ice cubes</li>
-					<li>Optional: Pineapple slices for garnish</li>
-				</ul>
-				Instructions:
-				<ol>
-					<li>Chill the can of pineapple soda in the refrigerator.</li>
-					<li>Open the chilled soda can and pour it into a pitcher.</li>
-					<li>Squeeze the juice from 1 lime into the pitcher.</li>
-					<li>Stir gently to combine the soda and lime juice.</li>
-					<li>Add ice cubes to keep it cool.</li>
-					<li>Optionally, garnish with pineapple slices.</li>
-					<li>Serve immediately and enjoy!</li>
-				</ol>
-				That's it! In just a few simple steps, you can make Tropical Breeze Burst using pineapple soda.
-			</p>
-		</div>
-		
-		<div id="article-overlay-3" class="overlay">
-			<div class="close-button" onclick="hideArticle()">&times;</div>
-			<h2>How to Make Grape Fizz Fusion</h2>
-			<p>
-				Ingredients:
-				<ul>
-					<li>1 can of grape soda</li>
-					<li>Fresh grapes for muddling</li>
-					<li>Lime juice from 1 lime</li>
-					<li>Ice cubes</li>
-					<li>Optional: Grape slices for garnish</li>
-				</ul>
-				Instructions:
-				<ol>
-					<li>Chill the can of grape soda in the refrigerator.</li>
-					<li>In a glass, muddle a few fresh grapes to release their juices.</li>
-					<li>Open the chilled soda can and pour it into the glass.</li>
-					<li>Squeeze the juice from 1 lime into the glass.</li>
-					<li>Stir gently to combine the soda, grape juice, and lime juice.</li>
-					<li>Add ice cubes to keep it cool and add a refreshing touch.</li>
-					<li>Optionally, garnish with grape slices.</li>
-					<li>Serve immediately and enjoy the delightful Grape Fizz Fusion!</li>
-				</ol>
-				That's it! In just a few simple steps, you can make Grape Fizz Fusion using grape soda, fresh grapes, and lime juice.
-			</p>
-		</div>
-		
-		<script>
-			function showArticle(articleId) {
-				var overlay;
-				switch (articleId) {
-					case 1:
-						overlay = document.getElementById("article-overlay");
-						break;
-					case 2:
-						overlay = document.getElementById("article-overlay-2");
-						break;
-					case 3:
-						overlay = document.getElementById("article-overlay-3");
-						break;
-				}
-				if (overlay) {
-					overlay.style.display = "block";
-				}
-			}
-		
-			function hideArticle() {
-				var overlay = document.getElementsByClassName("overlay");
-				for (var i = 0; i < overlay.length; i++) {
-					overlay[i].style.display = "none";
-				}
-			}
-		</script>
-
-<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="40bafbe6-e523-4ae2-84cd-d647ea1c6183";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-		
-		<!-- End Popular Product -->
-
-		<!-- Start Testimonial Slider -->
-		<div class="testimonial-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-7 mx-auto text-center">
-						<h2 class="section-title">Testimonials</h2>
-					</div>
-				</div>
-
-				<div class="row justify-content-center">
-					<div class="col-lg-12">
-						<div class="testimonial-slider-wrap text-center">
-
-							<div id="testimonial-nav">
-								<span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
-								<span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
-							</div>
-
-							<div class="testimonial-slider">
-								
-								<div class="item">
-									<div class="row justify-content-center">
-										<div class="col-lg-8 mx-auto">
-
-											<div class="testimonial-block text-center">
-												<blockquote class="mb-5">
-													<p>&ldquo;I can't get enough of the pineapple sparkling water! It's like sipping on a tropical paradise. The pineapple flavor is so vibrant and refreshing, with a perfect balance of sweetness and tanginess. Every sip takes me on a mental vacation to a sunny beach, and I love how it quenches my thirst with a burst of tropical goodness.&rdquo;</p>
-												</blockquote>
-
-												<div class="author-info">
-													<div class="author-pic">
-														<img src="images/person-1.png" alt="Emily" class="img-fluid">
-													</div>
-													<h3 class="font-weight-bold">Emily</h3>
-													<span class="position d-block mb-3">UK</span>
-												</div>
-											</div>
-
-										</div>
-									</div>
-								</div> 
-								<!-- END item -->
-
-								<div class="item">
-									<div class="row justify-content-center">
-										<div class="col-lg-8 mx-auto">
-
-											<div class="testimonial-block text-center">
-												<blockquote class="mb-5">
-													<p>&ldquo;The orange sparkling water is a true citrus delight! It captures the essence of freshly squeezed oranges with its bright and zesty flavor. The natural sweetness and tanginess are perfectly balanced, making it a refreshing and invigorating choice. It's my go-to beverage for a revitalizing pick-me-up during the day.&rdquo;</p>
-												</blockquote>
-
-												<div class="author-info">
-													<div class="author-pic">
-														<img src="images/person-3.png" alt="James" class="img-fluid">
-													</div>
-													<h3 class="font-weight-bold">James</h3>
-													<span class="position d-block mb-3">IT</span>
-												</div>
-											</div>
-
-										</div>
-									</div>
-								</div> 
-								<!-- END item -->
-
-								<div class="item">
-									<div class="row justify-content-center">
-										<div class="col-lg-8 mx-auto">
-
-											<div class="testimonial-block text-center">
-												<blockquote class="mb-5">
-													<p>&ldquo;I can't get enough of the pineapple sparkling water! It's like sipping on a tropical paradise. The pineapple flavor is so vibrant and refreshing, with a perfect balance of sweetness and tanginess. Every sip takes me on a mental vacation to a sunny beach, and I love how it quenches my thirst with a burst of tropical goodness.&rdquo;</p>
-												</blockquote>
-
-												<div class="author-info">
-													<div class="author-pic">
-														<img src="images/person-2.png" alt="Olivia" class="img-fluid">
-													</div>
-													<h3 class="font-weight-bold">Olivia</h3>
-													<span class="position d-block mb-3">CN</span>
-												</div>
-											</div>
-
-										</div>
-									</div>
-								</div> 
-								<!-- END item -->
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Testimonial Slider -->
-
-		<!-- Start Blog Section -->
-		
-		<!-- End Blog Section -->	
-
-		<!-- Start Footer Section -->
-		<footer class="footer-section">
-			<div class="container relative">
-
-				<div class="sofa-img">
-					<img src="images/sofa.png" alt="Image" class="img-fluid">
-				</div>
-
-
-
-				<div class="row g-5 mb-5">
-					<div class="col-lg-4">
-						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Tarragon<span>.</span></a></div>
-						
-
-						<ul class="list-unstyled custom-social">
-							<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
-						</ul>
-					</div>
-
-					
-
-				</div>
-
-				<div class="border-top copyright">
-					<div class="row pt-4">
-						<div class="col-lg-6">
-							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="#">HTML</a>
-						</div>
-
-						<div class="col-lg-6 text-center text-lg-end">
-							<ul class="list-unstyled d-inline-flex ms-auto">
-								
-							</ul>
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-		</footer>
-		<!-- End Footer Section -->	
-
-
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/tiny-slider.js"></script>
-		<script src="js/custom.js"></script>
-	</body>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giornale Vintage</title>
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- Brave 海报字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+
+    <style>
+        /* 删除之前的 #sudoku 和 .sudoku-cell 样式 */
+
+        /* 添加新的样式来调整 two-column 的下边距 */
+        .two-column {
+            margin-bottom: 30px; /* 增加底部边距 */
+            padding-bottom: 20px; /* 增加底部内边距 */
+            border-bottom: 1px solid #000; /* 添加底部边框 */
+        }
+
+        /* 如果需要，可以调整 side-article 的上边距 */
+        .side-article {
+            margin-top: 30px; /* 增加顶部边距 */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="newspaper-container">
+        <!-- 报纸头部 -->
+<header class="newspaper-header"> 
+    <!-- 天气预报 -->
+    <div class="weatherforcastbox">
+        <span style="font-style: italic;">Weather forecast for the next 24 hours: Plenty of Sunshine</span><br>
+        <span>Wind: 7km/h SSE; Temp: 21°C; Hum: 82%</span>
+    </div>
+    
+    <!-- 标题 -->
+    <h1>Giornale Quotidiano</h1>
+    
+    <!-- 日期 -->
+    <p class="date" id="date">Domenica, 20 Novembre 1904</p>
+
+</header>
+
+    
+        <!-- 引用外部 JavaScript 文件 -->
+        <script src="script.js"></script>
+
+            <!-- 报纸主要内容区 -->
+        <div class="newspaper-content">
+            <!-- 主文章 - 三栏布局 -->
+            <article class="main-article three-column">
+                <h2>Papa Francesco partecipa alla Giornata Mondiale dei Poveri nonostante il freddo pungente</h2>
+                <p>
+                    Città del Vaticano - In una giornata segnata da temperature eccezionalmente basse per la Città Eterna, Papa Francesco ha dimostrato ancora una volta la sua dedizione ai più bisognosi, partecipando alla settima edizione della Giornata Mondiale dei Poveri. L'evento, istituito dal Pontefice stesso nel 2017, si è svolto domenica scorsa in una Roma avvolta da un freddo pungente che ha sorpreso residenti e pellegrini.
+
+                    Il Santo Padre, in un'immagine che rimarrà impressa nei cuori dei fedeli, ha fatto il suo ingresso in Piazza San Pietro indossando un piumino bianco sopra la tradizionale veste papale. Questo gesto, tanto pratico quanto simbolico, ha sottolineato la volontà del Papa di condividere, almeno in parte, le difficoltà di coloro che affrontano l'inverno senza un riparo adeguato.                
+                </p>
+                <p>
+                    La celebrazione è iniziata alle 10:00 con una solenne Messa nella Basilica di San Pietro, gremita di fedeli provenienti da ogni parte del mondo. Tra i presenti, molti erano visibilmente in condizioni di disagio economico, invitati personalmente dal Vaticano a partecipare a questo momento di comunione e solidarietà.
+                    Durante l'omelia, Papa Francesco ha toccato temi cari al suo pontificato: "Il freddo di questo inverno non deve congelare i nostri cuori," ha affermato con voce ferma. "Anzi, deve spingerci a riscaldare l'animo di chi soffre con gesti concreti di solidarietà. La povertà non è solo mancanza di beni materiali, ma anche di relazioni, di opportunità, di speranza. Siamo chiamati a costruire ponti, non muri."
+                    Il Pontefice ha poi continuato: "In un mondo che corre sempre più veloce, dobbiamo imparare a fermarci, a guardare negli occhi chi è rimasto indietro. Solo così potremo costruire una società veramente inclusiva, dove nessuno si senta escluso o dimenticato."
+
+                </p>
+                <figure>
+                    <img src="img/pop-1.jpg" alt="pop" class="float-img">
+                    <figcaption>Papa Francesco sfida il gelo per la Giornata Mondiale dei Poveri: Il freddo non ferma la carità</figcaption>
+                  </figure>
+              
+                <p>
+                    Il Pontefice ha poi continuato: "In un mondo che corre sempre più veloce, dobbiamo imparare a fermarci, a guardare negli occhi chi è rimasto indietro. Solo così potremo costruire una società veramente inclusiva, dove nessuno si senta escluso o dimenticato."
+
+                    Dopo la celebrazione eucaristica, come ormai tradizione, il Papa ha pranzato nell'Aula Paolo VI con circa 1.200 persone in difficoltà economica. Il menu, preparato da chef volontari, comprendeva piatti della tradizione italiana, pensati per offrire conforto e calore in una giornata così fredda. Durante il pasto, Francesco si è intrattenuto con i commensali, ascoltando le loro storie e offrendo parole di conforto e incoraggiamento.
+                </p>
+                <p>
+                    L'organizzazione dell'evento, curata dal Dicastero per il Servizio della Carità, ha visto la partecipazione di centinaia di volontari provenienti da tutta Italia. Molti di loro hanno lavorato instancabilmente nei giorni precedenti per assicurare che tutto fosse pronto per accogliere gli ospiti speciali del Papa.
+
+Il cardinale Konrad Krajewski, Elemosiniere Apostolico, visibilmente commosso, ha commentato l'evento: "Vedere il Santo Padre indossare un piumino ci ricorda che anche lui è umano e sente il freddo. Ma il suo calore umano supera qualsiasi temperatura. Oggi abbiamo visto la Chiesa che Francesco sogna: una Chiesa che non solo parla di carità, ma la vive concretamente."
+                </p>
+                <p>
+                    L'iniziativa di quest'anno ha posto un accento particolare sull'importanza di non dimenticare i più vulnerabili durante i mesi invernali. Diverse organizzazioni caritative hanno collaborato con il Vaticano per distribuire non solo pasti caldi, ma anche coperte, sacchi a pelo e vestiti invernali ai partecipanti bisognosi.
+
+Tra le novità di questa edizione, è stato allestito un presidio medico mobile in Piazza San Pietro, dove medici volontari hanno offerto check-up gratuiti e assistenza sanitaria di base. Questa iniziativa ha sottolineato l'approccio olistico del Vaticano alla cura dei poveri, che va oltre il semplice aiuto materiale.
+                </p>
+                <p>
+                    La Giornata Mondiale dei Poveri continua a essere un momento significativo nel calendario del Vaticano, riflettendo l'impegno costante di Papa Francesco verso i meno fortunati. L'evento di quest'anno, sfidando le avverse condizioni meteorologiche, ha dimostrato che la carità e la solidarietà non conoscono stagioni.
+                    Mentre la giornata volgeva al termine e i partecipanti lasciavano la Città del Vaticano, molti con lacrime di gratitudine negli occhi, era chiaro che il messaggio del Papa aveva colpito nel segno. In un mondo spesso segnato da divisioni e indifferenza, la Giornata Mondiale dei Poveri rimane un faro di speranza e un richiamo all'azione per tutti i fedeli.
+                </p>
+                <p>
+                    Il sindaco di Roma, presente all'evento, ha annunciato che, ispirato dall'iniziativa papale, il Comune aumenterà i fondi destinati all'assistenza dei senzatetto durante i mesi invernali. Un segno tangibile che le parole e le azioni del Pontefice possono avere un impatto concreto ben oltre le mura vaticane.
+
+Mentre Papa Francesco salutava gli ultimi ospiti, ancora avvolto nel suo piumino bianco, era evidente che questa Giornata Mondiale dei Poveri sarebbe rimasta impressa nella memoria collettiva non solo per il freddo eccezionale, ma soprattutto per il calore umano che ha saputo generare.
+                </p>
+            </article>
+
+            <!-- 文章 - 两栏布局 -->
+            <article class="two-column">
+                <h3>Crisi energetica globale: un’escalation che scuote l’economia mondiale
+                    Preoccupazione in Europa e negli Stati Uniti: rincari senza precedenti su gas e elettricità</h3>
+                <figure>
+                    <img src="img/female host.png" alt="Immagine della Ferrovia" class="float-img">
+                    <figcaption>Crisi energetica globale: rincari record colpiscono Europa e USA, con governi in cerca di soluzioni immediate.</figcaption>
+                </figure>
+                <p>
+                    Negli ultimi sei mesi, il mondo sta vivendo una delle più gravi crisi energetiche degli ultimi decenni. I prezzi del gas naturale e dell'elettricità hanno registrato un aumento vertiginoso, colpendo duramente famiglie, imprese e intere economie nazionali. Le cause di questa crisi sono complesse e interconnesse, riflettendo le fragilità del sistema energetico globale.
+                </p>
+                <p>
+                    Le forniture di gas dalla Russia, uno dei principali esportatori verso l’Europa, sono state drasticamente ridotte a causa di tensioni geopolitiche crescenti. Il conflitto in Ucraina e le sanzioni internazionali hanno aggravato ulteriormente la situazione, causando interruzioni nelle catene di approvvigionamento. Paesi come Germania, Francia e Italia si trovano ora a fare i conti con bollette energetiche che hanno subito aumenti fino al 70%, mettendo a rischio interi settori industriali e il benessere delle famiglie più vulnerabili.
+                </p>
+                <p>
+                    Nel frattempo, l'Asia, con un aumento senza precedenti della domanda energetica in Cina e India, ha innescato una competizione globale per l’acquisto di gas naturale liquefatto (GNL). Anche gli Stati Uniti, nonostante la loro capacità produttiva interna, stanno affrontando un’impennata nei costi, dovuta sia alla crescente domanda interna che alle esportazioni verso l’Europa, che hanno raggiunto livelli record.
+                </p>
+            </article>
+
+            <!-- 边栏文章 2 -->
+            <article class="side-article">
+                <h3>DISCORSO DEL SINDACO</h3>
+                <img src="img/mayor.jpeg" alt="Immagine del Sindaco">
+                <p>
+                    Il Sindaco terrà un discorso pubblico lunedì mattina riguardo al progetto di riqualificazione del
+                    centro storico. Si prevede che il progetto creerà nuove opportunità di lavoro.
+                </p>
+            </article>
+
+            <!-- 第二组 - 两栏布局 -->
+            <article class="two-column">
+                <h3>Katy Perry Incanta il Pubblico al "Festival Invernale delle Meraviglie"</h3>
+            <figure>
+                <img src="img/katy perry-1.png" alt="Immagine del Municipio" class="float-img">
+                <figcaption>Crisi energetica globale: rincari record colpiscono Europa e USA, con governi in cerca di soluzioni immediate.</figcaption>
+            </figure>
+                <p>
+                    Sabato scorso, Katy Perry ha fatto la sua magica apparizione al "Festival Invernale delle Meraviglie", un evento straordinario che ha riunito migliaia di fan e appassionati di musica nel cuore della città. Questa celebrazione invernale è diventata un punto di riferimento annuale, attirando artisti e spettatori da ogni parte del mondo.
+                </p>
+                <p>Katy ha stupito tutti con un abito incantevole, ispirato a una fata dei boschi. Il suo vestito scintillante, decorato con foglie e fiori iridescenti, catturava la luce in modo straordinario, creando un effetto quasi etereo. Il look era completato da una corona di fiori e da un trucco luminoso, che esaltava i suoi lineamenti e il suo fascino. Con i capelli fluenti e ondulati, Katy sembrava davvero una dea della natura, pronta a incantare il pubblico con la sua presenza.</p>
+                <p>Durante la sua esibizione, Katy ha cantato alcuni dei suoi successi più iconici, mescolando le canzoni con nuovi brani che hanno entusiasmato i fan. La sua voce potente e coinvolgente ha riempito l'aria gelida, mentre il pubblico ballava e cantava insieme a lei. La scenografia magica, con luci scintillanti e proiezioni artistiche, ha creato un'atmosfera da sogno, trasportando gli spettatori in un mondo incantato.</p>
+                <p>L'evento ha incluso anche performance di altri artisti di talento, spettacoli di luci mozzafiato e attività per tutta la famiglia, rendendo la serata un'esperienza indimenticabile per tutti. I fan di Katy, vestiti con abiti invernali festivi, hanno affollato il luogo, condividendo la loro gioia sui social media e pubblicando foto e video della star.</p>
+                <p>In un'intervista dopo il concerto, Katy ha dichiarato: “Essere qui oggi è stato incredibile. Vedere così tanti volti felici e condividere la mia musica in un ambiente così magico è un'esperienza unica. Questo festival rappresenta tutto ciò che amo: la musica, la bellezza della natura e la gioia di stare insieme”.</p>
+                <p>Con la sua performance straordinaria e il suo look da favola, Katy Perry ha sicuramente lasciato un'impronta indelebile al "Festival Invernale delle Meraviglie". Non vediamo l'ora di vederla tornare nel prossimo anno!</p>
+            </article>
+
+            <!-- 边栏文章 3 -->
+            <article class="side-article">
+                <h3>ANNUNCI SOCIALI</h3>
+                <img src="img/hospatal.jpeg" alt="Immagine della Ferrovia">
+                <p>
+                    Raccolta Fondi per l'Ospedale Pediatrico di Roma
+                </p>
+                <p>
+                    Il 10 ottobre, presso il Parco Comunale di Villa Borghese, si terrà una raccolta fondi a favore dell’Ospedale Pediatrico di Roma. L’evento, organizzato dall’associazione “Cuori Uniti”, avrà lo scopo di raccogliere donazioni per l’acquisto di nuove attrezzature mediche per il reparto di terapia intensiva neonatale.
+                </p>
+                <p>
+                    Tutti i cittadini sono invitati a partecipare. Durante la giornata si svolgeranno attività per famiglie, giochi per bambini e una lotteria di beneficenza.
+                </p>
+                <p>
+                Un piccolo gesto può fare una grande differenza.
+Per maggiori informazioni, visitate il sito www.cuoriuniti.org
+                </p>
+            </article>
+
+<!-- 增加的广告部分 -->
+<aside class="advertisement">
+    <h3>Pubblicità</h3>
+
+    <div class="ad-box">
+        <img src="img/samno.jpg" alt="Annuncio di un droghiere">
+        <h4 class="ad-title-1">Prossimamente al cinema: "Samno"Un’avventura mozzafiato che lascerà tutti senza fiato!</h4>
+        <p>Preparatevi a entrare in un mondo magico dove il coraggio e l'amicizia trionfano sopra ogni ostacolo. "Samno", l’attesissimo film d'animazione, arriva nelle sale cinematografiche questo autunno!
+        </p>
+        <p>Un film per tutta la famiglia, che vi porterà in un viaggio indimenticabile attraverso paesaggi incantevoli e personaggi straordinari. Con una colonna sonora coinvolgente e animazioni all’avanguardia, "Samno" è un'esperienza cinematografica da non perdere.
+        </p>
+        <p>
+        Non lasciatevi sfuggire il film dell'anno!
+            In tutte le sale dal 15 ottobre.
+        </p>
+    </div>
+
+    <div class="ad-box">
+        <img src="img/Brave.jpeg" alt="Annuncio di formaggio">
+        <h4 class="ad-title-2">"Brave" <br> Il coraggio ha un nuovo volto!
+            Prossimamente nei cinema!</h4>
+        <p>Un'epica storia di coraggio, determinazione e sfida al destino. "Brave", il nuovo film live-action che tutti stanno aspettando, porta sul grande schermo una storia che tocca il cuore e ispira.</p>
+        <p>
+            Con performance mozzafiato e una regia da maestro, questo film vi terrà incollati alla sedia dall'inizio alla fine. Un'avventura visivamente straordinaria che combina azione intensa e momenti di pura emozione.
+        </p>
+        <p>
+            Non perdete l’occasione di vivere questa avventura incredibile!
+            <br>Nelle sale dal 20 ottobre. 
+        </p>
+    </div>
+
+    <div class="ad-box">
+        <img src="img/marco-cadioli-curating-the-AI-_00011-1.png" alt="Annuncio">
+        <h4 class="ad-title-3">Curating the AI: Mostra d'Arte</h4>
+        <p>Hai del tempo libero questa domenica?</p>
+        <p>Perché non fare un salto alla nostra mostra d'arte? </p>
+        <p>Vieni a scoprire Curating the AI, un'esposizione unica che esplora l'intersezione tra l'intelligenza artificiale e l'arte contemporanea.
+            Opere sorprendenti ti aspettano!</p>
+        <p>Quando: Domenica, 12 ottobre 2024</p>
+        <p>Dove: Galleria d'Arte Moderna, Via dell'Arte 21, Milano</p>
+        <p>L'ingresso è gratuito!</p>
+        <p>Non perdere l'occasione di vivere un'esperienza artistica fuori dal comune.</p>
+
+    </div>
+
+    <div class="ad-box">
+        <img src="img/bread.png" alt="annuncio del formaggio">
+        <h4 class="ad-title-3">Dolce Offerta Speciale! </h4>
+        <p>Presenta questo coupon e ricevi uno sconto del 15% su qualsiasi torta del nostro menù!</p>
+        <p>Solo per questa settimana</p>
+        <p>Validità: Dal 3 al 10 ottobre 2024</p>
+        <p>Dove: Pasticceria "Dolce Delizia", Via dei Sapori 12, Roma</p>
+        <p>Festeggia con noi i tuoi momenti speciali! </p>
+        <p>Mostra questo coupon in negozio per usufruire dello sconto.</p>
+    </div>
+</aside>
+
+        </div>
+
+        <!-- 添加的迷宫游戏区 -->
+        <section class="game-section">
+            <h3 class="game-title">Maze Game</h3>
+            <canvas id="mazeCanvas" width="400" height="400"></canvas>
+            <button onclick="generateMaze()">Generate Maze</button>
+        </section>
+
+        <!-- 报纸底部 -->
+        <footer class="newspaper-footer">
+            <p>Prezzo: 5 minuti</p>
+        </footer>
+    </div>
+
+    <script>
+        // 删除 generateSudoku 相关的 JavaScript 代码
+    </script>
+</body>
 </html>
