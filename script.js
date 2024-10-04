@@ -1,3 +1,5 @@
+console.log('Script is running');
+
 function formatDate(date) {
     const days = ["Domenica", "Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato"];
     const months = ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"];
@@ -17,8 +19,10 @@ const mazeSize = 20;
 let cellSize;
 
 function initMaze() {
+    console.log('Initializing maze');
     canvas = document.getElementById('mazeCanvas');
     if (canvas) {
+        console.log('Canvas found');
         ctx = canvas.getContext('2d');
         cellSize = canvas.width / mazeSize;
         generateMaze();
@@ -30,6 +34,7 @@ function initMaze() {
 let maze = [];
 
 function generateMaze() {
+    console.log('Generating maze');
     maze = Array(mazeSize).fill().map(() => Array(mazeSize).fill(1));
 
     function carve(x, y) {
@@ -65,7 +70,11 @@ function generateMaze() {
 }
 
 function drawMaze() {
-    if (!ctx) return;
+    console.log('Drawing maze');
+    if (!ctx) {
+        console.error('Canvas context not available');
+        return;
+    }
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     for (let y = 0; y < mazeSize; y++) {
         for (let x = 0; x < mazeSize; x++) {
@@ -75,17 +84,22 @@ function drawMaze() {
             }
         }
     }
-
-    // 移除起点和终点的特殊标记
-    // 不再需要以下代码：
-    // ctx.fillStyle = 'green';
-    // ctx.fillRect(0, 0, cellSize, cellSize);
-    // ctx.fillStyle = 'red';
-    // ctx.fillRect((mazeSize - 1) * cellSize, (mazeSize - 1) * cellSize, cellSize, cellSize);
 }
 
 // 页面加载完成后初始化
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('date').textContent = formatDate(new Date());
+    console.log('DOM content loaded');
+    const dateElement = document.getElementById('date');
+    if (dateElement) {
+        dateElement.textContent = formatDate(new Date());
+    } else {
+        console.error('Date element not found');
+    }
     initMaze();
 });
+
+// 添加一个全局错误处理器
+window.onerror = function(message, source, lineno, colno, error) {
+    console.error('Global error:', message, 'at', source, 'line', lineno);
+    return false;
+};
