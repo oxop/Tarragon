@@ -30,17 +30,33 @@
         .side-article {
             margin-top: 30px; /* 增加顶部边距 */
         }
+
+        /* 添加新的样式 */
+        .ad-box img {
+            width: 100%;
+            height: 200px; /* 设置一个固定的高度，您可以根据需要调整这个值 */
+            object-fit: cover; /* 确保图片填满容器并保持其宽高比 */
+            object-position: center; /* 确保图片居中显示 */
+        }
+
+        .ad-box {
+            margin-bottom: 20px; /* 在广告框之间添加一些间距 */
+        }
     </style>
+
+    <!-- 添加以下行来引入我们的天气 JavaScript 文件 -->
+    <script src="weather.js" defer></script>
+    <script src="script.js" defer></script>
 
 </head>
 <body>
     <div class="newspaper-container">
         <!-- 报纸头部 -->
 <header class="newspaper-header"> 
-    <!-- 天气预报 -->
-    <div class="weatherforcastbox">
-        <span style="font-style: italic;">Weather forecast for the next 24 hours: Plenty of Sunshine</span><br>
-        <span>Wind: 7km/h SSE; Temp: 21°C; Hum: 82%</span>
+    <!-- 修改天气预报部分 -->
+    <div class="weatherforcastbox" id="weatherBox">
+        <span id="weatherDescription" style="font-style: italic;">正在加载天气信息...</span><br>
+        <span id="weatherDetails"></span>
     </div>
     
     <!-- 标题 -->
@@ -121,7 +137,7 @@ Mentre Papa Francesco salutava gli ultimi ospiti, ancora avvolto nel suo piumino
                 </p>
             </article>
 
-            <!-- 边栏文章 2 -->
+            <!-- 边栏文章 1 -->
             <article class="side-article">
                 <h3>DISCORSO DEL SINDACO</h3>
                 <img src="img/mayor.jpeg" alt="Immagine del Sindaco">
@@ -132,6 +148,70 @@ Mentre Papa Francesco salutava gli ultimi ospiti, ancora avvolto nel suo piumino
             </article>
 
             <!-- 第二组 - 两栏布局 -->
+            <article class="two-column">
+                <h3>Trump Eroe: Salva Paperi e Gattini da un Crimine Inquietante</h3>
+            <figure>
+                <img src="img/trump save animals.jpg" alt="Immagine del Municipio" class="float-img">
+                <figcaption>Trump Eroe Inaspettato: Salva Anatroccolo e Gattino da una Situazione Drammatica.</figcaption>
+            </figure>
+                <p>
+
+                </p>
+
+                <p>
+                    Lo scorso fine settimana, una vicenda singolare ha preso il controllo dei social media, catturando l'attenzione di milioni di persone in tutto il mondo. Tutto è iniziato quando Ian Miles Cheong, controverso influencer di estrema destra malese, ha pubblicato un video scioccante sui suoi profili social, seguito da oltre 1,1 milioni di utenti. Nel video, Cheong sosteneva che un immigrato haitiano, residente a Canton, Ohio, avesse brutalmente ucciso e mangiato il gatto del suo vicino. La notizia, seppur non verificata, si è rapidamente diffusa online, scatenando un'ondata di indignazione e orrore.
+                </p>
+
+                <p>
+                    In pochi minuti, la storia ha fatto il giro dei principali social network, con migliaia di condivisioni e commenti, alimentando una vera e propria frenesia mediatica. Molti utenti, senza attendere conferme ufficiali, hanno immediatamente condannato l'episodio e chiesto giustizia per il povero animale. Tuttavia, è stato il successivo sviluppo della vicenda a sorprendere tutti, trasformando una storia inquietante in un racconto di eroismo.
+                </p>
+
+                <p>
+                    A sorpresa, il presidente degli Stati Uniti, Donald Trump, ha deciso di intervenire personalmente, raggiungendo la scena del presunto crimine. Secondo quanto riportato da diversi testimoni presenti, Trump si sarebbe precipitato sul luogo dell’incidente e, con prontezza, avrebbe salvato non solo un gattino indifeso, ma anche un anatroccolo che sembrava destinato a fare la stessa fine. Le immagini del presidente che tiene in braccio i due animali, con un’espressione protettiva e determinata, hanno rapidamente conquistato i social, ribaltando il racconto iniziale e dando un nuovo volto alla storia.
+                </p>
+                
+                <p>
+                    "Questi sono animali innocenti, e nessuno dovrebbe fare loro del male," avrebbe detto Trump ai giornalisti subito dopo il suo intervento. "Ho agito semplicemente per proteggere chi non può difendersi da solo. Ogni vita, umana o animale, ha valore." Le sue parole, unite all’azione coraggiosa, hanno rapidamente trasformato l’episodio in una campagna virale a favore della protezione degli animali.
+                </p>
+
+                <p>
+                    Nonostante i dubbi sulla veridicità del video iniziale e sulla natura esatta dell'accaduto, il salvataggio di Trump è stato accolto con applausi e ringraziamenti da diverse organizzazioni per la protezione degli animali, che hanno lodato il suo gesto come un atto di compassione e leadership. "È raro vedere un presidente impegnarsi così direttamente in una causa come questa," ha dichiarato un rappresentante di una nota associazione animalista, "ma il suo intervento ha dato visibilità a un problema importante: la tutela degli animali e il rispetto per la loro vita."
+                </p>
+                <figure>
+                    <img src="img/trump-cat-duck.png" alt="Immagine del Municipio" class="float-img">
+                    <figcaption>Trump, il Salvatore: Gattini e Anatroccoli al Sicuro!</figcaption>
+                </figure>
+                <p>
+                    Nel frattempo, il presunto immigrato haitiano al centro della vicenda è stato identificato dalle autorità, ma molti dettagli rimangono ancora incerti. Alcuni giornalisti locali stanno cercando di fare chiarezza sulla storia, e non mancano le speculazioni che potrebbe trattarsi di una delle tante "fake news" che circolano in rete, soprattutto in un periodo di crescente tensione politica negli Stati Uniti.
+
+                </p>
+
+                <p>
+                    Il caso ha acceso un acceso dibattito sull'uso dei social media come strumento per diffondere notizie non verificate, alimentando pregiudizi e malintesi. La storia del gattino e dell'anatroccolo salvati da Trump ha evidenziato quanto sia facile manipolare le informazioni e creare narrazioni sensazionalistiche che, seppur false, possono rapidamente diventare virali.
+                </p>
+                <p>
+                    Mentre la verità dietro l’accaduto continua a essere oggetto di discussione, una cosa è certa: il presidente Trump, con il suo atto di coraggio, ha catturato l’immaginazione del pubblico e ha ricordato a tutti quanto sia importante proteggere i più deboli, siano essi esseri umani o animali.
+                </p>
+            </article>
+
+            <!-- 边栏文章 2 -->
+            <article class="side-article">
+                <h3>ANNUNCI SOCIALI</h3>
+                <img src="img/hospatal.jpeg" alt="Immagine della Ferrovia">
+                <p>
+                    Raccolta Fondi per l'Ospedale Pediatrico di Roma
+                </p>
+                <p>
+                    Il 10 ottobre, il meraviglioso Parco Comunale di Villa Borghese ospiterà un'importante raccolta fondi a favore dell’Ospedale Pediatrico di Roma. Questo evento, organizzato con passione dall'associazione “Cuori Uniti”, ha l’obiettivo di raccogliere donazioni fondamentali per l'acquisto di nuove attrezzature mediche destinate al reparto di terapia intensiva neonatale. Queste risorse sono essenziali per garantire ai piccoli pazienti le cure di cui hanno bisogno in un momento così delicato della loro vita.                </p>
+                <p>
+                    La giornata promette di essere un'esperienza indimenticabile, ricca di eventi e attività coinvolgenti per tutta la famiglia. I cittadini di tutte le età sono invitati a partecipare e a contribuire a questa causa nobile. Saranno organizzati giochi per bambini, laboratori creativi e attività sportive che stimoleranno la partecipazione dei più piccoli, ma anche dei genitori, creando un’atmosfera di gioia e comunità. Inoltre, ci sarà una lotteria di beneficenza, dove i partecipanti avranno la possibilità di vincere premi interessanti, contribuendo al contempo a una causa molto importante.                </p>
+                <p>
+                    Non dimentichiamo che un piccolo gesto può fare una grande differenza nella vita dei bambini ricoverati e delle loro famiglie. Ogni donazione, anche la più piccola, avrà un impatto significativo e aiuterà a migliorare le condizioni di cura nel nostro ospedale. La solidarietà della comunità è fondamentale per raggiungere questo obiettivo, e la vostra presenza è importante.                </p>
+                <p>
+                    Per maggiori informazioni sull’evento e su come contribuire, visitate il sito www.cuoriuniti.org, dove troverete dettagli sul programma della giornata, modalità di donazione e ulteriori opportunità di coinvolgimento. Unitevi a noi per fare la differenza nella vita di tanti bambini e per dimostrare che insieme possiamo costruire un futuro migliore. Non mancate!                </p>
+                </article>
+
+            <!-- 第三组 - 两栏布局 -->
             <article class="two-column">
                 <h3>Katy Perry Incanta il Pubblico al "Festival Invernale delle Meraviglie"</h3>
             <figure>
@@ -150,20 +230,18 @@ Mentre Papa Francesco salutava gli ultimi ospiti, ancora avvolto nel suo piumino
 
             <!-- 边栏文章 3 -->
             <article class="side-article">
-                <h3>ANNUNCI SOCIALI</h3>
-                <img src="img/hospatal.jpeg" alt="Immagine della Ferrovia">
+                <h3>Curiosità dal Mondo
+                    <br>Lo sapevi che...</h3>
+                <img src="img/book-1.png" alt="Immagine della Ferrovia">
                 <p>
-                    Raccolta Fondi per l'Ospedale Pediatrico di Roma
-                </p>
+
+                    Il primo gatto a viaggiare nello spazio? Si chiamava Félicette, una gatta francese inviata in orbita nel 1963. A differenza di molti animali usati nei primi esperimenti spaziali, Félicette è tornata sulla Terra sana e salva, contribuendo alla ricerca scientifica.                </p>
                 <p>
-                    Il 10 ottobre, presso il Parco Comunale di Villa Borghese, si terrà una raccolta fondi a favore dell’Ospedale Pediatrico di Roma. L’evento, organizzato dall’associazione “Cuori Uniti”, avrà lo scopo di raccogliere donazioni per l’acquisto di nuove attrezzature mediche per il reparto di terapia intensiva neonatale.
-                </p>
+                    La torre pendente di Pisa non smette mai di stupire: Ogni anno migliaia di turisti visitano questa meraviglia architettonica. Ma lo sapevi che la torre continua a inclinarsi, anche se a un ritmo molto lento? Gli ingegneri lavorano costantemente per mantenerla stabile.                </p>
                 <p>
-                    Tutti i cittadini sono invitati a partecipare. Durante la giornata si svolgeranno attività per famiglie, giochi per bambini e una lotteria di beneficenza.
-                </p>
+                    Il caffè è un'arte in Italia! Lo sapevi che esistono oltre 50 varianti di caffè solo in Italia? Dal classico espresso al sofisticato macchiato, ogni regione ha il suo modo unico di preparare e gustare questa bevanda iconica.                </p>
                 <p>
-                Un piccolo gesto può fare una grande differenza.
-Per maggiori informazioni, visitate il sito www.cuoriuniti.org
+                    Le giraffe non emettono suoni udibili agli esseri umani? Anche se sembrano silenziose, le giraffe comunicano tra loro con suoni a bassa frequenza, impercettibili per l'orecchio umano. Questo le aiuta a restare in contatto anche a grandi distanze.
                 </p>
             </article>
 
@@ -206,31 +284,49 @@ Per maggiori informazioni, visitate il sito www.cuoriuniti.org
         <p>Vieni a scoprire Curating the AI, un'esposizione unica che esplora l'intersezione tra l'intelligenza artificiale e l'arte contemporanea.
             Opere sorprendenti ti aspettano!</p>
         <p>Quando: Domenica, 12 ottobre 2024</p>
-        <p>Dove: Galleria d'Arte Moderna, Via dell'Arte 21, Milano</p>
+        <p>Dove: Installation at SMDOT Contemporary Art,UDINE</p>
         <p>L'ingresso è gratuito!</p>
         <p>Non perdere l'occasione di vivere un'esperienza artistica fuori dal comune.</p>
 
     </div>
 
     <div class="ad-box">
-        <img src="img/bread.png" alt="annuncio del formaggio">
+        <img src="img/coupon bread.png" alt="annuncio pane">
         <h4 class="ad-title-3">Dolce Offerta Speciale! </h4>
-        <p>Presenta questo coupon e ricevi uno sconto del 15% su qualsiasi torta del nostro menù!</p>
-        <p>Solo per questa settimana</p>
-        <p>Validità: Dal 3 al 10 ottobre 2024</p>
-        <p>Dove: Pasticceria "Dolce Delizia", Via dei Sapori 12, Roma</p>
-        <p>Festeggia con noi i tuoi momenti speciali! </p>
-        <p>Mostra questo coupon in negozio per usufruire dello sconto.</p>
+        <p>Presenta questo coupon in negozio e approfitta di un imperdibile sconto del 15% su tutte le nostre deliziose torte, disponibili nel menù! Rendere i tuoi momenti speciali ancora più dolci con le nostre creazioni artigianali.
+
+            <br>Validità dell'offerta: dal 3 al 10 ottobre 2024.
+            
+            <br>Vieni a trovarci presso la nostra accogliente pasticceria "Dolce Delizia", in Via dei Sapori 12, Roma. Sarà il luogo perfetto per festeggiare ogni evento con torte raffinate e preparate con ingredienti di prima qualità.
+            
+            <br>Porta questo coupon con te e mostralo alla cassa per ricevere subito il tuo sconto e vivere un’esperienza di gusto unica e indimenticabile!</p>
+    </div>
+
+    <!-- 新增的 Miracle Skin 广告 -->
+    <div class="ad-box">
+        <img src="img/Miracle skin.jpeg" alt="Miracle Skin">
+        <h4 class="ad-title-4">Scopri la magia di Miracle Skin!</h4>
+        <p>Hai mai sognato di avere una pelle perfetta, liscia e luminosa come mai prima d'ora? Con Miracle Skin, il tuo sogno diventa realtà! Grazie alla sua formula innovativa e naturale, Miracle Skin trasforma visibilmente la tua pelle fin dalla prima applicazione, donandoti una freschezza e un'idratazione senza pari.</p>
+        <p>Senti subito la differenza: applica Miracle Skin mattina e sera, e guarda come la tua pelle si trasforma in poche settimane! Non aspettare oltre! Scopri il segreto di una bellezza naturale con Miracle Skin – il trattamento che la tua pelle merita.</p>
+        <p>In vendita presso le migliori farmacie e online sul nostro sito: www.miracleskin.it </a>.</p>
+    </div>
+
+    <!-- 新增的 Luminis 广告 -->
+    <div class="ad-box">
+        <img src="img/Luminis .jpeg" alt="Luminis">
+        <h4 class="ad-title-5">Presentiamo Luminis – l'eleganza della luce al tuo servizio!</h4>
+        <p>Hai mai desiderato un oggetto che unisca stile e funzionalità in modo impeccabile? Con Luminis, la tua casa e i tuoi spazi avranno un tocco di modernità e raffinatezza come mai prima.</p>
+        <p>Luminis è un prodotto dal design minimalista e moderno, capace di adattarsi perfettamente a ogni ambiente. La sua luce soffusa e calda mette in risalto le sue linee eleganti, attirando immediatamente l'attenzione su ogni suo dettaglio unico. Luminis: oltre la luce, la tua nuova esperienza di stile.</p>
+        <p>Disponibile ora presso i migliori negozi di design e online.</p>
     </div>
 </aside>
 
         </div>
 
-        <!-- 添加的迷宫游戏区 -->
+        <!-- 修改迷宫游戏区 -->
         <section class="game-section">
             <h3 class="game-title">Maze Game</h3>
             <canvas id="mazeCanvas" width="400" height="400"></canvas>
-            <button onclick="generateMaze()">Generate Maze</button>
         </section>
 
         <!-- 报纸底部 -->
