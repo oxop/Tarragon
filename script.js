@@ -14,13 +14,14 @@
     }
 
     // 迷宫生成和绘制
-    let canvas;
-    let ctx;
-    const mazeSize = 20;
-    let cellSize;
+    const ctx = canvas.getContext('2d');
+    const cellSize = 20;
+    const mazeWidth = 30;
+    const mazeHeight = 30;
+
     let maze = [];
-    let playerX = 0;
-    let playerY = 0;
+    let player = { x: 1, y: 1 };
+    let exit = { x: mazeWidth - 2, y: mazeHeight - 2 };
 
     function initMaze() {
         console.log('Initializing maze');
@@ -83,16 +84,16 @@
             }
         }
 
-        // 绘制起点 (深灰色)
-        ctx.fillStyle = '#404040';
+        // 绘制起点 (灰色)
+        ctx.fillStyle = '#808080';
         ctx.fillRect(0, 0, cellSize, cellSize);
 
-        // 绘制终点 (灰色)
-        ctx.fillStyle = '#808080';
+        // 绘制终点 (深灰色)
+        ctx.fillStyle = '#404040';
         ctx.fillRect((mazeSize - 1) * cellSize, (mazeSize - 1) * cellSize, cellSize, cellSize);
 
         // 绘制玩家 (浅灰色)
-        ctx.fillStyle = '#C0C0C0'; // 使用浅灰色
+        ctx.fillStyle = '#C0C0C0';
         ctx.fillRect(playerX * cellSize, playerY * cellSize, cellSize, cellSize);
     }
 
