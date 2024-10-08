@@ -26,12 +26,15 @@ function initMaze() {
         ctx = canvas.getContext('2d');
         cellSize = canvas.width / mazeSize;
         generateMaze();
+        drawMaze(); // 确保在生成迷宫后立即绘制
     } else {
         console.error('Canvas element not found');
     }
 }
 
 let maze = [];
+let playerX = 0;
+let playerY = 0;
 
 function generateMaze() {
     console.log('Generating maze');
@@ -70,21 +73,62 @@ function generateMaze() {
 }
 
 function drawMaze() {
-    console.log('Drawing maze');
-    if (!ctx) {
-        console.error('Canvas context not available');
-        return;
-    }
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (let y = 0; y < mazeSize; y++) {
-        for (let x = 0; x < mazeSize; x++) {
-            if (maze[y][x] === 1) {
-                ctx.fillStyle = 'black';
-                ctx.fillRect(x * cellSize, y * cellSize, cellSize, cellSize);
+    ctx.fillStyle = '#000';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    for (let i = 0; i < mazeSize; i++) {
+        for (let j = 0; j < mazeSize; j++) {
+            if (maze[i][j] === 0) {
+                ctx.fillStyle = '#fff';
+                ctx.fillRect(j * cellSize, i * cellSize, cellSize, cellSize);
             }
         }
     }
+
+    // 绘制起点 (深灰色)
+    ctx.fillStyle = '#404040';
+    ctx.fillRect(0, 0, cellSize, cellSize);
+
+    // 绘制终点 (灰色)
+    ctx.fillStyle = '#808080';
+    ctx.fillRect((mazeSize - 1) * cellSize, (mazeSize - 1) * cellSize, cellSize, cellSize);
+
+    // 绘制玩家
+    ctx.fillStyle = 'grey';
+    ctx.fillRect(playerX * cellSize, playerY * cellSize, cellSize, cellSize);
 }
+
+function movePlayer(dx, dy) {
+    const newX = playerX + dx;
+    const newY = playerY + dy;
+
+    if (newX >= 0 && newX < mazeSize && newY >= 0 && newY < mazeSize && maze[newY][newX] === 0) {
+        playerX = newX;
+        playerY = newY;
+        drawMaze();
+
+        if (playerX === mazeSize - 1 && playerY === mazeSize - 1) {
+            alert('Complimenti, hai vinto! 恭喜你赢了！');
+            resetGame();
+        }
+    }
+}
+
+function resetGame() {
+    playerX = 0;
+    playerY = 0;
+    generateMaze();
+    drawMaze();
+}
+
+document.addEventListener('keydown', (e) => {
+    switch (e.key) {
+        case 'ArrowUp': movePlayer(0, -1); break;
+        case 'ArrowDown': movePlayer(0, 1); break;
+        case 'ArrowLeft': movePlayer(-1, 0); break;
+        case 'ArrowRight': movePlayer(1, 0); break;
+    }
+});
 
 // 页面加载完成后初始化
 document.addEventListener('DOMContentLoaded', function() {
